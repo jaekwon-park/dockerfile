@@ -12,6 +12,8 @@ then
 else
     echo SKIP
 fi
+echo "show Config File"
+cat /mattermost/config/config.json
 
 #echo "Wait until database is ready..."
 #until nc -z db $DB_PORT_5432_TCP_PORT
