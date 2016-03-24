@@ -22,8 +22,8 @@
         "EnableTeamListing": false
     },
     "SqlSettings": {
-        "DriverName": "postgres",
-        "DataSource": "postgres://mmuser:mmuser_password@db:DB_PORT/mattermost?sslmode=disable&connect_timeout=10",
+        "DriverName": "mysql",
+        "DataSource": "mysql://MYSQL_USER:MYSQL_PASSWORD@tcp(MYSQL_HOST:3306)/MYSQL_DATABASE?charset=utf8mb4,utf8",
         "DataSourceReplicas": [],
         "MaxIdleConns": 10,
         "MaxOpenConns": 10,
