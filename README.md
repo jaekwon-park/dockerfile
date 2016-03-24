@@ -1,9 +1,9 @@
-Dockerfiles for Mattermost in production
+Google Container Engine for Mattermost in production
 
 ## Requirement
 
-* [docker]
-* [docker-compose]
+* [Google Cloud plaform Account]
+* 
 
 ## Howto
 
