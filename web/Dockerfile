@@ -3,9 +3,9 @@ FROM ubuntu:14.04
 RUN apt-get update && apt-get install -y nginx
 
 RUN rm /etc/nginx/sites-enabled/default
-RUN ln -s /etc/nginx/sites-available/mattermost /etc/nginx/sites-enabled/mattermost
+RUN ln -s /etc/nginx/sites-available/rocketchat /etc/nginx/sites-enabled/rocketchat
 
-ADD mattermost /etc/nginx/sites-available/
+ADD rocketchat /etc/nginx/sites-available/
 ADD docker-entry.sh /
 
 RUN mkdir /cert
