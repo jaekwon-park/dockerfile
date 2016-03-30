@@ -9,8 +9,8 @@ ADD rocketchat /etc/nginx/sites-available/
 ADD docker-entry.sh /
 
 RUN mkdir /cert
-ADD cert/cert.crt /cert/
-ADD cert/private/key-no-password.key /cert/
+#ADD cert/cert.crt /cert/
+#ADD cert/private/key-no-password.key /cert/
 
 RUN chmod +x /docker-entry.sh
 
