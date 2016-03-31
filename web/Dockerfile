@@ -3,9 +3,9 @@ FROM ubuntu:14.04
 RUN apt-get update && apt-get install -y nginx
 
 RUN rm /etc/nginx/sites-enabled/default
-RUN ln -s /etc/nginx/sites-available/rocketchat /etc/nginx/sites-enabled/rocketchat
+RUN ln -s /etc/nginx/sites-available/proxyssl /etc/nginx/sites-enabled/proxyssl
 
-ADD rocketchat /etc/nginx/sites-available/
+ADD proxyssl /etc/nginx/sites-available/
 ADD docker-entry.sh /
 
 RUN mkdir /cert
